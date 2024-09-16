@@ -45,8 +45,6 @@ func matchLine(line []byte, pattern string) (bool, error) {
 
 	var ok bool
 
-	fmt.Println("Logs from your program will appear here!")
-
 	ok = bytes.ContainsAny(line, pattern)
 
 	return ok, nil
